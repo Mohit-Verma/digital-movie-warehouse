@@ -3,6 +3,17 @@
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "business-components/*": ["./src/business-components/*"],
+      "common/*": ["./src/common/*"],
+      "components/*": ["./src/components/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "services/*": ["./src/services/*"],
+      "store/*": ["./src/store/*"],
+      "utils/*": ["./src/utils/*"]
+    },
     "skipLibCheck": true,
 
     /* Bundler mode */

@@ -6,26 +6,36 @@
   "scripts": {
     "vite-run": "vite",
     "vite-build": "tsc && vite build",
-    "dev": "npm-run-all --serial lint vite-run",
-    "build": "npm-run-all --serial lint vite-build",
+    "vite-preview": "vite preview",
     "lint": "eslint --max-warnings 0 \"./src/**/*.{ts,tsx}\"",
-    "preview": "vite preview"
+    "clean": "rimraf ./dist ./lib",
+    "dev": "npm-run-all --serial clean lint vite-run",
+    "build": "npm-run-all --serial clean lint vite-build",
+    "start": "npm-run-all --serial build vite-preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "mathjs": "^11.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5"
   },
   "devDependencies": {
+    "@types/node": "^18.16.3",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "eslint": "^8.38.0",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.0",
     "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
