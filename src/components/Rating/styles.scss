@@ -1,0 +1,9 @@
+.rating-component {
+    display: flex;
+    align-items: center;
+    
+    .rating-component-star {
+        padding: 2px;
+        cursor: pointer;
+    }
+}

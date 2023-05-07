@@ -1,0 +1,25 @@
+.empty-error-view {
+    width: 100%;
+    height: 100%;
+    font-weight: 200;
+    font-size: larger;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        padding: 0;
+        color: var(--anchor-color);
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        background: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.episode-list-bcomponent {
+    width: 100%;
+
+    .episode-entity-item {
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: 15% 40% 30% 15%;
+
+        .episode-rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .episode-release-label {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}

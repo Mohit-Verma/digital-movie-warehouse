@@ -1,0 +1,19 @@
+.episode-details-bcomponent {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .episode-title-placeholder {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .episode-distributed-rating-placeholder,
+    .episode-poster-crawl-placeholder,
+    .episode-rating-placeholder {
+        display: flex;
+        gap: 10px;
+    }
+}

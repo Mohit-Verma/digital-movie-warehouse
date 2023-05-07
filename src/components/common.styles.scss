@@ -1,0 +1,55 @@
+:root {
+    --divider-color: #e6e5e5;
+    --anchor-color: #646cff;
+    --loader-z-index: 10;
+}
+
+.disabled {
+    cursor: default !important;
+}
+
+// icon width size
+.icon-xxs {
+    width: 10px;
+    height: 10px;
+}
+
+.icon-xs {
+    width: 15px;
+    height: 15px;
+}
+
+.icon-sm {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-md {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-lg {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-xl {
+    width: 35px;
+    height: 35px;
+}
+
+.icon-xxl {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes scaleUp {
+    0% {transform: translate(-50%, -50%) scale(0)}
+    60%, 100% {transform: translate(-50%, -50%) scale(1)}
+}
+
+@keyframes pulse {
+    0%, 60%, 100% {transform: scale(1)}
+    80% {transform: scale(1.2)}
+}

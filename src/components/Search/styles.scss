@@ -1,0 +1,21 @@
+.search-component {
+    width: calc(100% - 13px);
+    height: 30px;
+    padding: 1px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffffff;
+
+    input {
+        height: 100%;
+        width: 100%;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

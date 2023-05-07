@@ -1,0 +1,17 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  
+  .episode-selector {
+    height: calc(100vh - 75px);
+  
+    .episode-details-bcomponent{
+      padding-top: 20px;
+    }
+  
+    &.with-details-window {
+      display: grid;
+      grid-template-columns: 60% 2% 38%;
+    }
+  }  
+}

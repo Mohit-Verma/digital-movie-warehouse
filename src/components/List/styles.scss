@@ -1,0 +1,14 @@
+.list-component {
+    width: 100%;
+
+    .list-item {
+
+        &.selectable {
+            cursor: pointer;
+
+            &.selected, &:hover {
+                background: var(--divider-color);
+            }
+        }
+    }
+}
