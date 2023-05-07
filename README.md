@@ -50,4 +50,4 @@ http://localhost:3000/
 
 ## Authors
 
-- [@mmsverma](https://github.com/Mohit-Verma)
+- [@msverma](https://github.com/Mohit-Verma)
