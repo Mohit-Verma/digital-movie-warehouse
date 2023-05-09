@@ -15,5 +15,25 @@
     .episode-rating-placeholder {
         display: flex;
         gap: 10px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .episode-poster-crawl-placeholder {
+        justify-content: center;
+    }
+
+    .episode-distributed-rating-placeholder,
+    .episode-poster-crawl-placeholder,
+    .episode-rating-placeholder {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .episode-distributed-rating-placeholder {
+        flex-wrap: wrap;
     }
 }

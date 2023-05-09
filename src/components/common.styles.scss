@@ -53,3 +53,42 @@
     0%, 60%, 100% {transform: scale(1)}
     80% {transform: scale(1.2)}
 }
+
+@media screen and (max-width: 700px)  {
+
+    // icon width size
+    .icon-xxs {
+        width: 5px;
+        height: 5px;
+    }
+
+    .icon-xs {
+        width: 10px;
+        height: 10px;
+    }
+
+    .icon-sm {
+        width: 13px;
+        height: 13px;
+    }
+
+    .icon-md {
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-lg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-xl {
+        width: 22px;
+        height: 22px;
+    }
+
+    .icon-xxl {
+        width: 48px;
+        height: 48px;
+    }
+}

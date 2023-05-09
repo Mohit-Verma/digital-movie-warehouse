@@ -23,3 +23,10 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+
+    .empty-error-view {
+        scale: 0.5;
+    }
+}

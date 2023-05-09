@@ -1,17 +1,28 @@
 .app {
   width: 100vw;
   height: 100vh;
+  overflow: scroll;
   
   .episode-selector {
     height: calc(100vh - 75px);
   
-    .episode-details-bcomponent{
-      padding-top: 20px;
+    .episode-details-bcomponent {
+      width: calc(100% - 20px);
+      padding: 20px 10px;
     }
   
     &.with-details-window {
       display: grid;
+      grid-template-rows: none;
       grid-template-columns: 60% 2% 38%;
     }
   }  
+}
+
+@media screen and (max-width: 900px) {
+
+  .episode-selector.with-details-window {
+    grid-template-columns: none !important;
+    grid-template-rows: 60% 2% 38%;
+  }
 }

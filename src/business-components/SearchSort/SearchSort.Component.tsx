@@ -35,7 +35,9 @@ const SearchSort: React.FC<TProps> = (props: TProps): JSX.Element => {
                     renderItem={(item) => (
                         <span> {item as appDefinitions.ESort} </span>
                     )}>
-                    <button> {LABELS.SORT} </button>
+                    <button>
+                        <span> {LABELS.SORT} </span>
+                    </button>
                 </Tooltip>
             </div>
             <div className="search-placeholder">

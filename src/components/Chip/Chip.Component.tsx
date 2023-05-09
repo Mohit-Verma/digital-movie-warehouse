@@ -4,9 +4,9 @@ type TProps = {
 
 const Chip: React.FC<TProps> = (props: TProps): JSX.Element => {
     return (
-        <div className="chip-component">
+        <span className="chip-component">
             {props.label}
-        </div>
+        </span>
     );
 };
 

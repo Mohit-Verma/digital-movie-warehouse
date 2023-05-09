@@ -15,7 +15,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 400;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -26,7 +26,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -40,7 +39,7 @@ button {
   border: 1px solid gray;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -55,6 +54,46 @@ button:focus-visible {
 }
 input,
 span {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  a {
+    font-weight: 300;
+  }
+  
+  button {
+    font-weight: 300;
+  }
+  input,
+  span {
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  :root {
+    line-height: 1;
+    font-weight: 350;
+  }
+
+  a {
+    font-weight: 350;
+  }
+  
+  button {
+    font-weight: 350;
+  }
+  input,
+  span {
+    font-size: 0.8em;
+    font-weight: 350;
+  }
 }
